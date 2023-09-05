@@ -1,0 +1,57 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/blashak/Projects/buenas-practicas/modulo1/seminario2/Ejercicio1/Ejercicio1.csproj": {}
+  },
+  "projects": {
+    "/home/blashak/Projects/buenas-practicas/modulo1/seminario2/Ejercicio1/Ejercicio1.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/blashak/Projects/buenas-practicas/modulo1/seminario2/Ejercicio1/Ejercicio1.csproj",
+        "projectName": "Ejercicio1",
+        "projectPath": "/home/blashak/Projects/buenas-practicas/modulo1/seminario2/Ejercicio1/Ejercicio1.csproj",
+        "packagesPath": "/home/blashak/.nuget/packages/",
+        "outputPath": "/home/blashak/Projects/buenas-practicas/modulo1/seminario2/Ejercicio1/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/home/blashak/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
