@@ -1,3 +1,4 @@
+using Internal;
 using Modulo1.Ejercicio6;
 
 namespace Modulo1.Ejercicio6
@@ -52,6 +53,47 @@ namespace Modulo1.Ejercicio6
             data2.Add("agus");
             data2.Add("ruben");
             Console.WriteLine(data2.Remove());
+        }
+    }
+
+    // Creamos un genérico que sirva para todos los tipos de datos
+    class GenericData<T>
+    {
+        private T[] data = new T[];
+        private int max = 0;
+
+        public void Add(T x)
+        {
+            data[max] = x;
+            max++;
+        }
+
+        public T Remove()
+        {
+            max--;
+            return data[max];
+        }
+    }
+
+    // Creamos estructuras de datos de tipo lista y diccionario
+    class GenericProgramRefactor
+    {
+        public static void Main()
+        {
+            IntegerData integerData = new GenericData();
+            integerData.Add(1);
+            integerData.Add(2);
+            Console.WriteLine(integerData.Remove());
+
+            StringData stringData = new GenericData();
+            stringData.Add("hola");
+            stringData.Add("adios");
+            Console.WriteLine(stringData.Remove());
+
+            UserData userData = new GenericData();
+            userData.Add("Miguel", 1234);
+            userData.Add("Susana", 5678);
+            Console.WriteLine(userData.Remove());
         }
     }
 }
